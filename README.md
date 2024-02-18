@@ -19,8 +19,11 @@ Currently, two official plugins are available:
 <!-- Playlist of videos -->
 
 Playlist is created from the locally stored videos which are stored inside public folder
+videos are stored in github with the project which increases the size of repository.
 
 -> videos can be stored in cloud storage and from their link is provided in playlist.
+
+<!--  -->
 
 
 click on space button play/pause is implemented

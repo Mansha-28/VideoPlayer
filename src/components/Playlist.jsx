@@ -44,14 +44,14 @@ export default function Playlist() {
   return (
     <div className='justify-center items-end'>
 
-        <div className='md:flex'>
+        <div className='flex flex-col md:flex-row'>
             {
                 currentVideo && 
-                <div className='w-[70%]'>
+                <div className='w-[100%] md:w-[70%]'>
                     <VideoPlayer src={currentVideo.src} autoplay={false} />
                 </div>
             }
-            <div className={currentVideo ? 'w-[30%]' : 'w-[40%] m-auto'}>
+            <div className={currentVideo ? 'mt-5 m-auto w-[80%] md:mt-0 md:w-[30%]' : 'w-[40%] m-auto'}>
                 <p className='text-xl font-bold bg-gray-300 p-2'>Playlist</p>
                 {videos.map((item, index) => (
                 <ul
