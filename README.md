@@ -1,5 +1,7 @@
 # React + Vite
 
+Hosted link:
+video-player-umber-five.vercel.app
 
 <!-- Locally running application steps -->
 
