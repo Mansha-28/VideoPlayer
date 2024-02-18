@@ -7,7 +7,7 @@ Hosted link:
 
 1. clone the github repository for this project
 <!-- install required dependencies -->
-2. npm i
+2. npm install
 3. npm run dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
