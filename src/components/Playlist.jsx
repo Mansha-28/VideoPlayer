@@ -4,19 +4,12 @@ import VideoPlayer from './VideoPlayer';
 export default function Playlist() {
 
     const [videos, setVideos] = useState([
-        { id: '1', title: 'Video 1', src: '/song.mp4' },
-        { id: '2', title: 'Video 2', src: '/song.mp4' },
-        { id: '3', title: 'Video 3', src: 'video.mp4' },
-        { id: '4', title: 'Video 4', src: 'video.mp4' },
-        { id: '5', title: 'Video 5', src: 'video.mp4' },
-        { id: '6', title: 'Video 6', src: 'video.mp4' },
-        { id: '7', title: 'Video 7', src: 'video.mp4' },
-        { id: '8', title: 'Video 8', src: 'video.mp4' },
-        { id: '9', title: 'Video 9', src: 'video.mp4' },
-        { id: '10', title: 'Video 10', src: 'video.mp4' },
-        { id: '11', title: 'Video 11', src: 'video.mp4' },
-        { id: '12', title: 'Video 12', src: 'video.mp4' },
-        { id: '13', title: 'Video 13', src: 'video.mp4' }
+        { id: '1', title: 'Introduction', src: '/ReactJS Tutorial - 1 - Introduction.mp4' },
+        { id: '2', title: ' Hello World ', src: '/ReactJS Tutorial - 2 - Hello World.mp4' },
+        { id: '3', title: ' Folder Structure', src: '/ReactJS Tutorial - 3 - Folder Structure.mp4' },
+        { id: '4', title: ' Components ', src: '/ReactJS Tutorial - 4 - Components.mp4' },
+        { id: '5', title: 'Functional Components ', src: '/ReactJS Tutorial - 5 - Functional Components.mp4' },
+        { id: '6', title: 'Class Components ', src: '/ReactJS Tutorial - 6 - Class Components.mp4' }
     ])
 
     const [currentVideo, setCurrentVideo] = useState(null);
@@ -51,7 +44,7 @@ export default function Playlist() {
   return (
     <div className='justify-center items-end'>
 
-        <div className='flex'>
+        <div className='md:flex'>
             {
                 currentVideo && 
                 <div className='w-[70%]'>

@@ -86,7 +86,7 @@ const VideoPlayer = ({ src, autoplay }) => {
   };
 
   return (
-    <div className={`relative mx-5`}>
+    <div className={`relative mx-5 border-2 border-black'`}>
       <video ref={videoRef} src={src} className="w-full" onClick={togglePlay} />
 
       {/* Controls */}
