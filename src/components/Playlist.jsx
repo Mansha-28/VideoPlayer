@@ -55,7 +55,7 @@ export default function Playlist() {
                 <p className='text-xl font-bold bg-gray-300 p-2'>Playlist</p>
                 {videos.map((item, index) => (
                 <ul
-                    className='border-black border-2 p-2 mt-2'
+                    className={currentVideo === item ? 'border-black border-2 p-2 mt-2 bg-green-300' : 'border-black border-2 p-2 mt-2 hover:bg-gray-400'}
                     key={item.id}
                     draggable
                     onDragStart={(e) => handleDragStart(e, index)}
